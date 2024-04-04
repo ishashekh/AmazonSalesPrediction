@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Visualization 1: Distribution of Ratings
+# Visualization 1: Distribution of Product Ratings
 plt.figure(figsize=(8, 6))
 sns.histplot(data_cleaned['rating'], kde=True, bins=20, color='skyblue')
 plt.title('Distribution of Product Ratings')
