@@ -21,7 +21,7 @@ conf_int = forecast.conf_int()
 forecast_dates = pd.date_range(
     start=sales_data.index[-1] + pd.offsets.MonthEnd(1), periods=12, freq='M')
 
-# Plotting the forecast
+# Plotting the forecast for next 12 months
 plt.figure(figsize=(10, 6))
 plt.plot(sales_data.index, sales_data['Sales'],
          label='Historical Monthly Sales')
